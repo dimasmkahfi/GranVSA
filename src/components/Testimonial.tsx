@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
+import userOneImg from "../../public/img/customer1.jpeg";
+import userTwoImg from "../../public/img/customer2.jpeg";
 import userThreeImg from "../../public/img/user3.jpg";
 
 export const Testimonials = () => {
@@ -13,36 +13,36 @@ export const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              The seafarer visa processing was excellent. It was completed on
+              time and at a very reasonable cost
             </p>
-
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Taufik"
+              title="Crewing Replacement"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              The entire process was streamlined, and the staff was always
+              available to answer any questions I had.
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Rinovan Chaniago"
+              title="Crewing Supervisor"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+              The process was efficient, the cost was reasonable, and the staff
+              was friendly and knowledgeable. I couldn't be happier with the
+              results.
             </p>
 
             <Avatar

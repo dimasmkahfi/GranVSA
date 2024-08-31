@@ -4,6 +4,8 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 import { Navbar } from "@/components/Navbar";
+
+import { PopupWidget } from "@/components/PopupWidget";
 import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +27,7 @@ export default function RootLayout({
           <Navbar />
           <div>{children}</div>
           <Footer />
+          <PopupWidget />
         </ThemeProvider>
       </body>
     </html>

@@ -4,7 +4,6 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
@@ -18,52 +17,22 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
-                  alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
+                  src="/img/vsa.png"
+                  alt="logo"
+                  width="90"
+                  height="90"
+                  className="w-55 h-45"
                 />
-                <span>Nextly</span>
               </Link>
             </div>
-
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
-            </div>
-
-            <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44"
-              >
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
-                />
-              </a>
+              GranVSA Specializing in maritime documentation. We offer
+              comprehensive services for visas, flag licenses, and seafarer
+              documentation, ensuring full compliance with international
+              regulations.
             </div>
           </div>
 
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/visa"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
@@ -113,18 +82,18 @@ export function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
+          Copyright © {new Date().getFullYear()}. Made by{" "}
+          <a
+            href="https://personal-portofolio-alex.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            AlexManurung59
           </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a>
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/*<Backlink />*/}
     </div>
   );
 }
@@ -176,7 +145,7 @@ const Linkedin = ({ size = 24 }) => (
   </svg>
 );
 
-const Backlink = () => {
+/*const Backlink = () => {
   return (
     <a
       href="https://web3templates.com"
@@ -202,4 +171,4 @@ const Backlink = () => {
       <span>Web3Templates</span>
     </a>
   );
-};
+};*/

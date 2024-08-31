@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 
 export const Navbar = () => {
-  const navigation = ["Home", "Our Service", "Pricing", "Our Client"];
+  const navigation = ["Home", "Our Service", "Our Client"];
 
   return (
     <div className="w-full">
