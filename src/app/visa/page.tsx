@@ -14,6 +14,7 @@ type VisaType =
 // Define the structure of the visa details
 interface VisaDetails {
   description: string;
+  Text: string;
   imageUrl: string;
   prices: { type: string; price: string }[];
 }
@@ -25,6 +26,7 @@ const Visa = () => {
     "China Visa": {
       description: "China Visa",
       imageUrl: "/img/flag/china.png",
+      Text: "",
       prices: [
         { type: "Single Entry", price: "$100" },
         { type: "Multiple Entry", price: "$200" },
@@ -33,6 +35,7 @@ const Visa = () => {
     "Schengen Visa": {
       description: "Schengen Visa",
       imageUrl: "/img/flag/europ.png",
+      Text: "Schengen Visa description goes here.",
       prices: [
         { type: "Single Entry", price: "$120" },
         { type: "Multiple Entry", price: "$250" },
@@ -41,6 +44,7 @@ const Visa = () => {
     "South Korea Visa": {
       description: "South Korea Visa",
       imageUrl: "/img/flag/southkorea.jpg",
+      Text: "South Korea Visa description goes here.",
       prices: [
         { type: "Single Entry", price: "$80" },
         { type: "Multiple Entry", price: "$160" },
@@ -49,6 +53,7 @@ const Visa = () => {
     "Taiwan Visa": {
       description: "Taiwan Visa",
       imageUrl: "/img/flag/taiwan.png",
+      Text: "Taiwan Visa description goes here.",
       prices: [
         { type: "Single Entry", price: "$90" },
         { type: "Multiple Entry", price: "$180" },
@@ -57,6 +62,7 @@ const Visa = () => {
     "USA Visa": {
       description: "USA Visa",
       imageUrl: "/img/flag/usa.png",
+      Text: "USA Visa description goes here.",
       prices: [
         { type: "Single Entry", price: "$160" },
         { type: "Multiple Entry", price: "$320" },
@@ -76,8 +82,8 @@ const Visa = () => {
           {Object.keys(visaDetails).map((title) => (
             <div
               key={title}
-              className="min-w-[75%] sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] cursor-pointer" // Added cursor-pointer here
-              onClick={() => handleCardClick(title as VisaType)} // handle click here
+              className="min-w-[75%] sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] cursor-pointer"
+              onClick={() => handleCardClick(title as VisaType)}
             >
               <Card
                 title={title}
@@ -92,7 +98,7 @@ const Visa = () => {
       {selectedVisa && (
         <div className="mt-8 p-4 border rounded-lg bg-gray-100">
           <h2 className="text-2xl font-bold mb-4">{selectedVisa}</h2>
-          <p>{visaDetails[selectedVisa].description}</p>
+          <p className="mb-4">{visaDetails[selectedVisa].Text}</p>
           <table className="table-auto mt-4 w-full text-left">
             <thead>
               <tr>

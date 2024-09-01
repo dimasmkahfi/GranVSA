@@ -1,24 +1,23 @@
 import { Container } from "@/components/Container";
-import { Cta } from "@/components/Cta";
 import { Hero } from "@/components/Hero";
-import { OurServices } from "@/components/OurServices";
 import { SectionTitle } from "@/components/SectionTitle";
-import { Testimonials } from "@/components/Testimonial";
-/*import { SectionTitle } from "@/components/SectionTitle";*/
-/*import { OurServices } from "@/components/OurServices";*/
+import { OurServices } from "@/components/OurServices";
 {
   /*import { Video } from "@/components/Video";*/
 }
-/*import { Testimonials } from "@/components/Testimonials";*/
-/*import { Faq } from "@/components/Faq";*/
-/*import { Cta } from "@/components/Cta";*/
+
+{
+  /*import { Faq } from "@/components/Faq";*/
+}
+import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
-/*import CardCarousel from "@/ui/CardsCarousel";*/
+import { Testimonials } from "@/components/Testimonial";
 export default function Home() {
   return (
     <Container>
       <Hero />
+      <br />
       <OurServices />
       {/*<SectionTitle
         preTitle="Watch a video"
@@ -41,11 +40,12 @@ export default function Home() {
 
       <Testimonials />
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
+      {/*<SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
-      </SectionTitle>
+      </SectionTitle>*/}
 
+      {/*<Faq />*/}
       <Cta />
     </Container>
   );
