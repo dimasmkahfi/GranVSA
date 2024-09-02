@@ -1,9 +1,10 @@
 import React from "react";
+import Card from "./Card";
 import Carousel from "./Carousel";
 
 export const OurServices = () => {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div id="our-services" className="flex flex-wrap justify-center">
       <div>
         <h2 className="font-bold flex flex-col justify-center text-center text-4xl">
           Our Service

@@ -5,7 +5,6 @@ import { OurServices } from "@/components/OurServices";
 {
   /*import { Video } from "@/components/Video";*/
 }
-
 {
   /*import { Faq } from "@/components/Faq";*/
 }

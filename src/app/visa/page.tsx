@@ -14,7 +14,7 @@ type VisaType =
 // Define the structure of the visa details
 interface VisaDetails {
   description: string;
-  Text: string;
+  text: string; // Changed 'Text' to 'text' for consistency in naming conventions
   imageUrl: string;
   prices: { type: string; price: string }[];
 }
@@ -26,7 +26,18 @@ const Visa = () => {
     "China Visa": {
       description: "China Visa",
       imageUrl: "/img/flag/china.png",
-      Text: "",
+      text: `Personal Documents:
+      
+      - Passport valid for at least 6 months
+      - Recent passport-sized photo
+      - Completed visa application form
+      
+      Seafaring Documents:
+      
+      - Seafarer's employment contract
+      - Seaman's Book
+      - Ship's itinerary
+      - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$100" },
         { type: "Multiple Entry", price: "$200" },
@@ -35,7 +46,18 @@ const Visa = () => {
     "Schengen Visa": {
       description: "Schengen Visa",
       imageUrl: "/img/flag/europ.png",
-      Text: "Schengen Visa description goes here.",
+      text: `Personal Documents:
+      
+      - Passport valid for at least 6 months
+      - Recent passport-sized photo
+      - Completed visa application form
+      
+      Seafaring Documents:
+      
+      - Seafarer's employment contract
+      - Seaman's Book
+      - Ship's itinerary
+      - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$120" },
         { type: "Multiple Entry", price: "$250" },
@@ -44,7 +66,18 @@ const Visa = () => {
     "South Korea Visa": {
       description: "South Korea Visa",
       imageUrl: "/img/flag/southkorea.jpg",
-      Text: "South Korea Visa description goes here.",
+      text: `Personal Documents:
+      
+      - Passport valid for at least 6 months
+      - Recent passport-sized photo
+      - Completed visa application form
+      
+      Seafaring Documents:
+      
+      - Seafarer's employment contract
+      - Seaman's Book
+      - Ship's itinerary
+      - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$80" },
         { type: "Multiple Entry", price: "$160" },
@@ -53,7 +86,18 @@ const Visa = () => {
     "Taiwan Visa": {
       description: "Taiwan Visa",
       imageUrl: "/img/flag/taiwan.png",
-      Text: "Taiwan Visa description goes here.",
+      text: `Personal Documents:
+      
+      - Passport valid for at least 6 months
+      - Recent passport-sized photo
+      - Completed visa application form
+      
+      Seafaring Documents:
+      
+      - Seafarer's employment contract
+      - Seaman's Book
+      - Ship's itinerary
+      - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$90" },
         { type: "Multiple Entry", price: "$180" },
@@ -62,7 +106,18 @@ const Visa = () => {
     "USA Visa": {
       description: "USA Visa",
       imageUrl: "/img/flag/usa.png",
-      Text: "USA Visa description goes here.",
+      text: `Personal Documents:
+      
+      - Passport valid for at least 6 months
+      - Recent passport-sized photo
+      - Completed visa application form
+      
+      Seafaring Documents:
+      
+      - Seafarer's employment contract
+      - Seaman's Book
+      - Ship's itinerary
+      - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$160" },
         { type: "Multiple Entry", price: "$320" },
@@ -98,7 +153,9 @@ const Visa = () => {
       {selectedVisa && (
         <div className="mt-8 p-4 border rounded-lg bg-gray-100">
           <h2 className="text-2xl font-bold mb-4">{selectedVisa}</h2>
-          <p className="mb-4">{visaDetails[selectedVisa].Text}</p>
+          <p className="mb-4 whitespace-pre-line">
+            {visaDetails[selectedVisa].text}
+          </p>
           <table className="table-auto mt-4 w-full text-left">
             <thead>
               <tr>
