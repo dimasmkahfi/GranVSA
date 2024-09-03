@@ -34,9 +34,9 @@ const Visa = () => {
       
       Seafaring Documents:
       
-      - Seafarer's employment contract
-      - Seaman's Book
-      - Ship's itinerary
+      - Seafarer employment contract
+      - Seaman Book
+      - Ship itinerary
       - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$100" },
@@ -54,9 +54,9 @@ const Visa = () => {
       
       Seafaring Documents:
       
-      - Seafarer's employment contract
-      - Seaman's Book
-      - Ship's itinerary
+      - Seafarer employment contract
+      - Seaman Book
+      - Ship itinerary
       - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$120" },
@@ -74,9 +74,9 @@ const Visa = () => {
       
       Seafaring Documents:
       
-      - Seafarer's employment contract
-      - Seaman's Book
-      - Ship's itinerary
+      - Seafarer employment contract
+      - Seaman Book
+      - Ship itinerary
       - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$80" },
@@ -94,9 +94,9 @@ const Visa = () => {
       
       Seafaring Documents:
       
-      - Seafarer's employment contract
-      - Seaman's Book
-      - Ship's itinerary
+      - Seafarer employment contract
+      - Seaman Book
+      - Ship itinerary
       - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$90" },
@@ -114,9 +114,9 @@ const Visa = () => {
       
       Seafaring Documents:
       
-      - Seafarer's employment contract
-      - Seaman's Book
-      - Ship's itinerary
+      - Seafarer employment contract
+      - Seaman Book
+      - Ship itinerary
       - Letter from the shipping company`,
       prices: [
         { type: "Single Entry", price: "$160" },

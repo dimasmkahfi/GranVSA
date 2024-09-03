@@ -10,7 +10,7 @@ const CardGrid: React.FC = () => {
           <div className="w-full h-full">
             <Card
               title="Visa for Seafarer"
-              description="Need a seafarer visa? We're here to help you. Fast process, easy requirements, and guaranteed timely departure."
+              description="Need a seafarer visa? We are here to help you. Fast process, easy requirements, and guaranteed timely departure."
               imageUrl="/img/visa.png"
             />
           </div>
@@ -28,7 +28,7 @@ const CardGrid: React.FC = () => {
           <div className="w-full h-full">
             <Card
               title="Seafarer Document"
-              description="Need a seafarer visa? We're here to help you. Fast process, easy requirements, and guaranteed timely departure."
+              description="Need a seafarer visa? We are here to help you. Fast process, easy requirements, and guaranteed timely departure."
               imageUrl="/img/seafarerdo.png"
             />
           </div>
