@@ -24,7 +24,7 @@ const CardGrid: React.FC = () => {
             />
           </div>
         </Link>
-        <Link href="/visa">
+        <Link href="/seafarer-documents">
           <div className="w-full h-full">
             <Card
               title="Seafarer Document"

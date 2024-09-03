@@ -29,12 +29,11 @@ export default function Home() {
 
       {/*<Video videoId="fZ0D0cnR88E" />*/}
 
-      <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+      <SectionTitle preTitle="Testimonials" title=" What our customers said">
+        <p className="font-bold text-black">
+          Testimonials is a great way to increase the brand trust and awareness.
+          Use this section to highlight your popular customers.
+        </p>
       </SectionTitle>
 
       <Testimonials />

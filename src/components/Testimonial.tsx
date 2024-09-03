@@ -11,8 +11,8 @@ export const Testimonials = () => {
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-300">
+            <p className="text-2xl leading-normal text-black">
               The seafarer visa processing was excellent. It was completed on
               time and at a very reasonable cost.
             </p>
@@ -24,8 +24,8 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-300">
+            <p className="text-2xl leading-normal text-black">
               The entire process was streamlined, and the staff was always
               available to answer any questions I had.
             </p>
@@ -37,8 +37,8 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-300">
+            <p className="text-2xl leading-normal text-black">
               The process was efficient, the cost was reasonable, and the staff
               was friendly and knowledgeable. I couldn't be happier with the
               results.
@@ -75,8 +75,8 @@ function Avatar(props: Readonly<AvatarProps>) {
         />
       </div>
       <div>
-        <div className="text-lg font-medium">{props.name}</div>
-        <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
+        <div className="text-lg font-medium text-black">{props.name}</div>
+        <div className="text-black">{props.title}</div>
       </div>
     </div>
   );

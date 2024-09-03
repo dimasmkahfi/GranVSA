@@ -130,7 +130,7 @@ const Visa = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto text-black">
       <h1 className="text-3xl font-bold text-center mb-8">Visa For Seafarer</h1>
       <div className="overflow-x-auto">
         <div className="flex space-x-4">

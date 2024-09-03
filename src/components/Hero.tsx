@@ -13,7 +13,7 @@ export const Hero = () => {
             <div className="flex">
               <img src="/img/vsa.png" alt="logo" className="w-25 h-16" />
             </div>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            <p className="py-5 text-xl leading-normal text-gray-600 lg:text-xl xl:text-2xl ">
               Welcome to GranVSA, your premier destination for seamless travel
               solutions. Inspired by our motto, "Visa Ventures, Road
               Adventures," we are dedicated to making your travel dreams a
