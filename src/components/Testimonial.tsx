@@ -40,7 +40,7 @@ export const Testimonials = () => {
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-300">
             <p className="text-2xl leading-normal text-black">
               The process was efficient, the cost was reasonable, and the staff
-              was friendly and knowledgeable. I couldn't be happier with the
+              was friendly and knowledgeable. I could not be happier with the
               results.
             </p>
             <Avatar
