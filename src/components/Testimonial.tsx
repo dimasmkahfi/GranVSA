@@ -31,8 +31,8 @@ export const Testimonials = () => {
             </p>
             <Avatar
               image={userTwoImg}
-              name="Rinovan Chaniago"
-              title="Crewing Supervisor"
+              name="Heyfel Anugerah Utama"
+              title="3rd Officer LNG Vessel"
             />
           </div>
         </div>
