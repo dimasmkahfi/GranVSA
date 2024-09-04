@@ -7,29 +7,32 @@ const CardGrid: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Link href="/visa">
-          <div className="w-full h-full">
+          <div className="w-full h-full flex">
             <Card
               title="Visa for Seafarer"
               description="Need a seafarer visa? We are here to help you. Fast process, easy requirements, and guaranteed timely departure."
               imageUrl="/img/visa.png"
+              className="flex-grow"
             />
           </div>
         </Link>
         <Link href="/flag-license">
-          <div className="w-full h-full">
+          <div className="w-full h-full flex">
             <Card
               title="Flag License"
               description="Travel worry-free! Your tourist visa is just a click away. Fast and reliable service, and easy requirements."
               imageUrl="/img/flagli.png"
+              className="flex-grow"
             />
           </div>
         </Link>
         <Link href="/seafarer-documents">
-          <div className="w-full h-full">
+          <div className="w-full h-full flex">
             <Card
               title="Seafarer Document"
               description="Need a seafarer visa? We are here to help you. Fast process, easy requirements, and guaranteed timely departure."
               imageUrl="/img/seafarerdo.png"
+              className="flex-grow"
             />
           </div>
         </Link>
