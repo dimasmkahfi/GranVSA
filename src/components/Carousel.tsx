@@ -12,7 +12,6 @@ const CardGrid: React.FC = () => {
               title="Visa for Seafarer"
               description="Need a seafarer visa? We are here to help you. Fast process, easy requirements, and guaranteed timely departure."
               imageUrl="/img/visa.png"
-              className="flex-grow"
             />
           </div>
         </Link>
@@ -22,7 +21,6 @@ const CardGrid: React.FC = () => {
               title="Flag License"
               description="Travel worry-free! Your tourist visa is just a click away. Fast and reliable service, and easy requirements."
               imageUrl="/img/flagli.png"
-              className="flex-grow"
             />
           </div>
         </Link>
@@ -32,7 +30,6 @@ const CardGrid: React.FC = () => {
               title="Seafarer Document"
               description="Need a seafarer visa? We are here to help you. Fast process, easy requirements, and guaranteed timely departure."
               imageUrl="/img/seafarerdo.png"
-              className="flex-grow"
             />
           </div>
         </Link>
