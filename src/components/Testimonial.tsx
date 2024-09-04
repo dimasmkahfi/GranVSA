@@ -3,7 +3,7 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 import userOneImg from "../../public/img/customer1.jpeg";
-import userTwoImg from "../../public/img/customer2.jpeg";
+import userTwoImg from "../../public/img/customer4.jpeg";
 import userThreeImg from "../../public/img/customer3.jpeg";
 
 export const Testimonials = () => {
