@@ -4,7 +4,7 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const legal = ["Terms", "Privacy", "Legal"];
+  /*const legal = ["Terms", "Privacy", "Legal"];*/
   return (
     <div className="relative">
       <Container>
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            {/*<div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
                 <Link
                   key={index}
@@ -44,7 +44,7 @@ export function Footer() {
                   {item}
                 </Link>
               ))}
-            </div>
+            </div>*/}
           </div>
           <div className="">
             <div>Follow us</div>
@@ -88,7 +88,7 @@ export function Footer() {
             target="_blank"
             rel="noopener"
           >
-            AlexManurung59
+            Greanco Indonesia
           </a>{" "}
         </div>
       </Container>

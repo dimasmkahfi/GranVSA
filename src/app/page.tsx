@@ -14,33 +14,37 @@ import { benefitOne, benefitTwo } from "@/components/data";
 import { Testimonials } from "@/components/Testimonial";
 export default function Home() {
   return (
-    <Container>
-      <Hero />
+    <>
+      <div className="bg-white">
+        <Container>
+          <Hero />
+        </Container>
+      </div>
       <br />
-      <OurServices />
-      {/*<SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>*/}
-
-      {/*<Video videoId="fZ0D0cnR88E" />*/}
-
-      <SectionTitle
-        preTitle="Testimonials"
-        title=" What our customers said"
-      ></SectionTitle>
-      <Testimonials />
-      {/*<SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>*/}
-
-      {/*<Faq />*/}
-      <Cta />
-    </Container>
+      <br />
+      <div className="bg-gray-200">
+        <Container>
+          <OurServices />
+        </Container>
+      </div>
+      <br />
+      <br />
+      <div className="bg-white">
+        <Container>
+          <SectionTitle
+            preTitle="Testimonials"
+            title="What our customers said"
+          />
+          <Testimonials />
+        </Container>
+      </div>
+      <br />
+      <br />
+      <div className="bg-gray-200">
+        <Container>
+          <Cta />
+        </Container>
+      </div>
+    </>
   );
 }
