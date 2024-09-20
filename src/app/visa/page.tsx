@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Card from "@/components/Card";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 // Define the keys for the visaDetails object
 type VisaType =
@@ -132,22 +134,31 @@ const Visa = () => {
   return (
     <div className="container mx-auto text-black">
       <h1 className="text-3xl font-bold text-center mb-8">Visa For Seafarer</h1>
-      <div className="overflow-x-auto">
-        <div className="flex space-x-4">
+      <div className="overflow-x-hidden">
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+        >
           {Object.keys(visaDetails).map((title) => (
-            <div
-              key={title}
-              className="min-w-[75%] sm:min-w-[50%] md:min-w-[33.33%] lg:min-w-[25%] cursor-pointer"
-              onClick={() => handleCardClick(title as VisaType)}
-            >
-              <Card
-                title={title}
-                description={visaDetails[title as VisaType].description}
-                imageUrl={visaDetails[title as VisaType].imageUrl}
-              />
-            </div>
+            <SwiperSlide key={title}>
+              <div
+                className="cursor-pointer"
+                onClick={() => handleCardClick(title as VisaType)}
+              >
+                <Card
+                  title={title}
+                  description={visaDetails[title as VisaType].description}
+                  imageUrl={visaDetails[title as VisaType].imageUrl}
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
 
       {selectedVisa && (
