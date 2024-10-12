@@ -12,6 +12,7 @@ import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 import { Testimonials } from "@/components/Testimonial";
+import React from "react";
 export default function Home() {
   return (
     <>
