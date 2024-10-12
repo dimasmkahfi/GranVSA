@@ -16,21 +16,19 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white min-h-[100vh]">
         <Container>
           <Hero />
         </Container>
       </div>
       <br />
-      <br />
-      <div className="bg-gray-200">
+      <div className="bg-gray-200 min-h-[100vh]">
         <Container>
           <OurServices />
         </Container>
       </div>
       <br />
-      <br />
-      <div className="bg-white">
+      <div className="bg-white min-h-[100vh]">
         <Container>
           <SectionTitle
             preTitle="Testimonials"

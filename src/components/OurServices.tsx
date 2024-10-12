@@ -10,9 +10,16 @@ export const OurServices = () => {
           Our Service
         </h2>
         <br />
-        <p>
+        <p className="bold text-xl">
           Visa ready, car ready! Enjoy a seamless journey from start to finish
           with our best visa and car rental services.{" "}
+        </p>
+        <br />
+        <p className="bold text-lg">
+          {" "}
+          We provide visa processing services for seafarers, as well as
+          management of flag state licenses and seafarer certificate
+          revalidation for our fellow seafarers in need.{" "}
         </p>
         <br />
         <Carousel />
